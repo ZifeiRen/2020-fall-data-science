@@ -25,7 +25,7 @@ For this section of the exercise we will be using the `bigquery-public-data.aust
 >>>>>>> upstream/master
 	```
 
-7. Write a query that tells us how many _distinct_ values there are in the complaint_description column.
+6. Write a query that tells us how many _distinct_ values there are in the complaint_description column.
 	``` 
 <<<<<<< HEAD
 	SELECT count(DISTINCT complaint_description) FROM `bigquery-public-data.austin_311.311_service_requests`;
@@ -34,7 +34,7 @@ For this section of the exercise we will be using the `bigquery-public-data.aust
 >>>>>>> upstream/master
 	```
   
-8. Write a query that counts how many times each owning_department appears in the table and orders them from highest to lowest. 
+7. Write a query that counts how many times each owning_department appears in the table and orders them from highest to lowest. 
 	``` 
 <<<<<<< HEAD
     SELECT 
@@ -45,7 +45,9 @@ For this section of the exercise we will be using the `bigquery-public-data.aust
 	        ORDER BY COUNT(*) DESC;
 ```
 	
-9. Write a query that lists the top 5 complaint_description that appear most and the amount of times they appear in this table. (hint... limit)
+8.Write a query that lists the top 5 complaint_description that appear most and the amount of times they appear in this table. (hint... limit)
+
+
 	```
 	SELECT 
 	   complaint_description, COUNT(*) AS count
@@ -188,12 +190,12 @@ For this section of the exercise we will be using the `bigquery-public-data.aust
 	  week_start_date
 	```
 	
-6.  How many ads did the 'TOM STEYER 2020' campaign run? (No need to insert query here, just type in the answer.)
+5.  How many ads did the 'TOM STEYER 2020' campaign run? (No need to insert query here, just type in the answer.)
 	```
 	50
 	```
 	
-7. Write a query that has, in the US region only, the total spend in usd for each advertiser_name and how many ads they ran. (Hint, you're going to have to join tables for this one). 
+6. Write a query that has, in the US region only, the total spend in usd for each advertiser_name and how many ads they ran. (Hint, you're going to have to join tables for this one). 
 	```
 	with
 	t as(SELECT
@@ -375,7 +377,7 @@ For this section of the exercise we will be using the `bigquery-public-data.aust
 6. Copy the link and paste it right below this line. 
 <<<<<<< HEAD
 	* YOUR LINK: https://colab.research.google.com/drive/1fVISdPsE4UWmqnR3YYOd3dgemc9vr3fc?usp=sharing
-9. Complete the two questions in the colab notebook file. 
+7. Complete the two questions in the colab notebook file. 
 
 =======
 	* YOUR LINK:  ________________________________
